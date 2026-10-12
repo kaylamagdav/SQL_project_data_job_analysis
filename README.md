@@ -57,7 +57,7 @@ Here is a breakdown of the top data and marketing analyst jobs from 2023:
 
 - **A handful of postings are duplicates or near-duplicates, which can quietly skew any average.** For example, Frontier Communications posted the identical "Data Analyst / Data Scientist, Wholesale" role twice at $118,965, and USAA posted near-identical "Information Management Analyst I" and "Decision Science Analyst - Mid Level" roles 2–3 times each at the same salary. If you're computing company-level or city-level averages, it's worth deduplicating by title+company+salary first, since repeated postings of the same role inflate both the count and the perceived demand.
 
-![Top Paying Roles](assets\1_top_paying_marketing_analyst_jobs.png)
+![Top Paying Roles](assets/1_top_paying_marketing_analyst_jobs.png)
  *Bar graph visualizing the salary for the top 10 salaries for data analysts; Claude generated this graph from my SQL query results*
 
  ### 2. Skills for Top Paying Jobs
@@ -99,7 +99,7 @@ ORDER BY
 
 - **Skill count doesn't track with salary.** The two $167,755 USAA postings have 5–7 skills listed, but so does the $60,000 iTalent Digital posting (5 skills: sql, python, express, excel, tableau) — same toolkit, roughly a third of the pay. Meanwhile `785984` ($90,000, Xometry) lists only 2 skills (sql, looker). This reinforces something from earlier in our analysis: company and role context explain pay differences here more than the breadth of the skill list does.
 
-![Top Paying skills](assets\2_top_paying_data_marketing_analyst_skills(1).png)
+![Top Paying skills](assets/2_top_paying_data_marketing_analyst_skills(1).png)
  *Bar graph visualizing the top skills required for top paying data analyst jobs; ChatGPT generated this graph from my SQL query results*
 
  ### 3. In-Demand Skills for Data Analysts
@@ -127,7 +127,7 @@ limit 5;
 
 - **USAA (and its full-name variant) controls 3 of the 8 distinct jobs in this dataset, all in the top 4 salaries.** Since USAA-linked postings dominate the high end, any "top skill" that looks salary-correlated here (phoenix, sas, snowflake, r) may really just be "skills USAA happens to ask for" rather than a broader market signal — worth keeping in mind before generalizing this to the marketing-analyst job market as a whole.
 
-![Top Demanded Skills](assets\3_top_demanded_skills_data_analyst.png)
+![Top Demanded Skills](assets/3_top_demanded_skills_data_analyst.png)
  *Bar graph visualizing the top demanded skills for data analysts; Claude generated this graph from my SQL query results*
 
  ### 4. Skills Based on Salaries
@@ -156,7 +156,7 @@ limit 25;
 
 - **A few entries look like small-sample outliers, not real trends.** `notion` ($158,750), `twilio` ($138,500), `zoom` ($111,250), and `confluence` ($107,000) are collaboration/productivity tools, not analytical skills — unusual for a "top-paying skills for data analysts" list. These are very likely averages pulled from just 1–2 high-paying postings that happened to mention the tool, rather than genuine market demand. Worth checking the number of postings behind each of these before treating them as actionable signals.
 
-![Top Skills Based On Salary](assets\4_top_skills_based_on_salary_full25.png)
+![Top Skills Based On Salary](assets/4_top_skills_based_on_salary_full25.png)
  *Bar graph visualizing the top paying skills for data analysts; Claude generated this graph from my SQL query results*
 
  ### 5. Most Optimal Skills to Learn
@@ -190,7 +190,7 @@ lIMIT 25;
 
 - **Snowflake stands out as the best "demand-to-pay" tradeoff in this list.** It has the fewest postings (17) but the highest average salary ($112,121) of the whole set — a small but reliable signal that cloud data warehousing is a differentiator worth having, now backed by a double-digit sample size rather than the 1-2 posting flukes we saw with `notion` or `twilio` in the earlier (unfiltered) data.
 
-![Optimal Skils](assets\5_optimal_skills.png)
+![Optimal Skils](assets/5_optimal_skills.png)
 *Chart visualizing the most optimal skills for data analysts to learn based on demand and salary; ChatGPT generated this graph from my SQL query results*
 
 # What I learned
